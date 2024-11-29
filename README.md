@@ -109,7 +109,7 @@ A secure file-sharing application built using Django and Python that supports us
 
  ` ` ` 
 
-## 3. File Upload (POST /upload/) [Ops User Only]
+##### 3. File Upload (POST /upload/) [Ops User Only]
 
    ` ` ` 
  
@@ -133,7 +133,7 @@ Key:    ` ` `
 
 #### Value: Choose the file to upload.
 
-## 4. List Files (GET /files/) [Client User Only]
+#####  4. List Files (GET /files/) [Client User Only]
 
    ` ` ` 
       URL: http://127.0.0.1:8000/files/ 
@@ -146,7 +146,7 @@ Key:    ` ` `
      Authorization: Token <your_token>
 ` ` ` 
 
-## 5. Download File (GET /files/<file_id>/download/) [Client User Only]
+##### 5. Download File (GET /files/<file_id>/download/) [Client User Only]
      ` ` ` 
         URL: http://127.0.0.1:8000/files/<file_id>/download/
        
@@ -163,18 +163,20 @@ Key:    ` ` `
 
   secure-file-sharing/
 │
-├── files/                   Django app for handling file upload/download
+├── files/  Django app for handling file upload/download
 │   ├── migrations/          # Database migrations
 │   ├── models.py            # Database models
 │   ├── views.py             # API views
 │   ├── urls.py              # App-specific URL configurations
 │   └── ...
 │
+
 ├── secure_file_sharing/     # Main project folder
 │   ├── settings.py          # Project settings
 │   ├── urls.py              # Project URL configurations
 │   └── ...
 │
+
 ├── manage.py                # Django management script
  └── requirements.txt        # Python dependencies
 
