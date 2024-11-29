@@ -111,29 +111,32 @@ A secure file-sharing application built using Django and Python that supports us
 
 ## 3. File Upload (POST /upload/) [Ops User Only]
 
- ` ` ` 
+   ` ` ` 
  
- URL:  http://127.0.0.1:8000/upload/ 
+     URL:  http://127.0.0.1:8000/upload/ 
  
- ` ` ` 
+   ` ` ` 
 
 ##### Headers:
 
-` ` ` 
-  Authorization: Token <your_token>
+ ` ` ` 
+      Authorization: Token <your_token>
   
-` ` ` 
+ ` ` ` 
 
 ##### Payload (form-data):
 
-Key: ` ` `  file   ` ` ` 
+Key:  ` ` `  
+              file 
+   
+      ` ` ` 
 
 #### Value: Choose the file to upload.
 
 ## 4. List Files (GET /files/) [Client User Only]
   ` ` ` 
   
-  URL: http://127.0.0.1:8000/files/ 
+       URL: http://127.0.0.1:8000/files/ 
   
   ` ` ` 
 
@@ -145,26 +148,23 @@ Key: ` ` `  file   ` ` `
 ` ` ` 
 
 ## 5. Download File (GET /files/<file_id>/download/) [Client User Only]
-` ` ` 
-
-URL: http://127.0.0.1:8000/files/<file_id>/download/
-
-` ` `
+     ` ` ` 
+       URL: http://127.0.0.1:8000/files/<file_id>/download/
+       
+    ` ` `
 
 #### Headers:
 
-` ` `
-
-  Authorization: Token <your_token>
-
-
-` ` `
+   ` ` `
+      Authorization: Token <your_token>
+      
+  ` ` `
 
 ###  Project Structure
 
 ####  secure-file-sharing/
 │
-#### ├── files/                   # Django app for handling file upload/download
+#### ├── files/                   Django app for handling file upload/download
 │   ├── migrations/          # Database migrations
 │   ├── models.py            # Database models
 │   ├── views.py             # API views
@@ -183,7 +183,5 @@ URL: http://127.0.0.1:8000/files/<file_id>/download/
 
 
 
-### Contact
-If you have any questions or suggestions, feel free to open an issue or contact the maintainer:
-
-### GitHub: gaurharsh
+#### Author
+ ##### Harshvardhan 
