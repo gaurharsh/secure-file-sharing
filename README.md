@@ -1,7 +1,7 @@
-# secure-file-sharing
+## secure-file-sharing
 A secure file-sharing application built using Django and Python that supports user authentication, file uploads, and secure file downloads. The application implements token-based authentication for added security and provides distinct functionalities for different user roles (e.g., Ops users and Client users).
 
-# Features
+## Features
 #### User Authentication: Signup, login, and token-based authentication using Django's built-in authentication system.
 #### Role-based Access Control:
 #### Ops Users: Can upload files.
@@ -10,84 +10,86 @@ A secure file-sharing application built using Django and Python that supports us
 #### Token Authentication: Secure access to API endpoints using tokens.
 
 
-# Installation
-## Prerequisites
+## Installation
+###  Prerequisites
  Ensure you have the following installed:
 
 #### Python (>= 3.6)
 #### pip (Python package manager)
 #### Git
 
-# Steps
- ### Clone the Repository:
+## Steps
+ #### Clone the Repository:
        ``` 
             git clone https://github.com/gaurharsh/secure-file-sharing.git
             cd secure-file-sharing
       ` ` ` 
 
- ### Create a Virtual Environment:
+ #### Create a Virtual Environment:
        ` ` `
             python -m venv venv
            source venv/bin/activate  # On Windows: venv\Scripts\activate
       ` ` `
 
-### Install Dependencies:
+#### Install Dependencies:
            ` ` ` 
             pip install -r requirements.txt
             
            ` ` `
              
 
- ###  Apply Migrations:
+ ####  Apply Migrations:
        ` ` ` 
         python manage.py makemigrations
         python manage.py migrate
+       
       ` `  `
 
-### Create a Superuser (Admin Account):
-    ` ` `
-       python manage.py createsuperuser
-       
-  ` ` ` 
+#### Create a Superuser (Admin Account):
+      ` ` `
+        python manage.py createsuperuser
+      ` ` ` 
 
 ### Run the Development Server:
-
- ` ` ` 
+ 
+   ` ` ` 
        python manage.py runserver
        
- ` ` ` 
+   ` ` ` 
 
-###   Access the Application:
+####   Access the Application:
 
-` ` ` 
+  ` ` ` 
       Visit http://127.0.0.1:8000/ in your browser.
      
- ` ` ` 
+   ` ` ` 
 
 
- # API Endpoints
+ #### API Endpoints
 
- ### 1. User Signup (POST /signup/)
-  
-    URL: ` ` ` http://127.0.0.1:8000/signup/ ` ` ` 
+ ##### 1. User Signup (POST /signup/)
+   ` ` ` 
+    URL:  http://127.0.0.1:8000/signup/ 
+    
+   ` ` ` 
  
 
-###  Payload Example (JSON):
+#####  Payload Example (JSON):
 
 ` ` ` 
-    {
+   {
   "username": "testuser",
   "password": "password123"
-}
-
+   }
 ` ` ` 
 
-### 2. User Login (POST /login/)
+##### 2. User Login (POST /login/)
+ ` ` ` 
+   URL:  http://127.0.0.1:8000/login/
+  ` ` `
 
-   URL: ` ` ` http://127.0.0.1:8000/login/ ` ` `
 
-
-#### Payload Example (JSON):
+##### Payload Example (JSON):
 ` ` `
 {
   "username": "testuser",
@@ -96,11 +98,11 @@ A secure file-sharing application built using Django and Python that supports us
 
  ` ` `
 
- #### Response:
+ ##### Response:
  ` ` `
   {
   "token": "your_generated_token"
-}
+ }
 
 ` ` ` 
 
@@ -110,13 +112,13 @@ A secure file-sharing application built using Django and Python that supports us
  URL:` ` `  http://127.0.0.1:8000/upload/ ` ` `
 ` ` 
 
-### Headers:
+##### Headers:
 
 ` ` ` 
   Authorization: Token <your_token>
 ` ` ` 
 
-### Payload (form-data):
+##### Payload (form-data):
 
 Key: ` ` ` file ` ` ` 
 
@@ -133,31 +135,41 @@ URL: ` ` `  http://127.0.0.1:8000/files/ ` ` `
 ` ` ` 
 
 ## 5. Download File (GET /files/<file_id>/download/) [Client User Only]
+` ` ` 
+URL: http://127.0.0.1:8000/files/<file_id>/download/
 
-URL: ``` http://127.0.0.1:8000/files/<file_id>/download/ ```
+```
 
 #### Headers:
 
 ` ` ` 
   Authorization: Token <your_token>
+
 ` ` `
 
-## Project Structure
+###  Project Structure
 
-## secure-file-sharing/
+####  secure-file-sharing/
 │
-## ├── files/                   # Django app for handling file upload/download
+#### ├── files/                   # Django app for handling file upload/download
 │   ├── migrations/          # Database migrations
 │   ├── models.py            # Database models
 │   ├── views.py             # API views
 │   ├── urls.py              # App-specific URL configurations
 │   └── ...
 │
-## ├── secure_file_sharing/     # Main project folder
+#### ├── secure_file_sharing/     # Main project folder
 │   ├── settings.py          # Project settings
 │   ├── urls.py              # Project URL configurations
 │   └── ...
 │
-## ├── manage.py                # Django management script
-## └── requirements.txt         # Python dependencies
+#### ├── manage.py                # Django management script
+#### └── requirements.txt         # Python dependencies
 
+
+
+
+### Contact
+If you have any questions or suggestions, feel free to open an issue or contact the maintainer:
+
+### GitHub: gaurharsh
