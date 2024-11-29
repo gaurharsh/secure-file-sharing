@@ -60,19 +60,19 @@ A secure file-sharing application built using Django and Python that supports us
 
 ####   Access the Application:
 
-  ` ` ` 
+ 
          Visit http://127.0.0.1:8000/ in your browser.
          
-  ` ` ` 
+  
 
 
  #### API Endpoints
 
  ##### 1. User Signup (POST /signup/)
-   ` ` ` 
-           URL:  http://127.0.0.1:8000/signup/ 
+ 
+          URL:  http://127.0.0.1:8000/signup/ 
       
-  ` ` ` 
+ 
  
 
 #####  Payload Example (JSON):
@@ -86,10 +86,10 @@ A secure file-sharing application built using Django and Python that supports us
     ` ` ` 
 
 ##### 2. User Login (POST /login/)
-        ` ` ` 
+       
                 URL:  http://127.0.0.1:8000/login/
    
-        ` ` `
+      
 
 
 ##### Payload Example (JSON):
@@ -111,47 +111,43 @@ A secure file-sharing application built using Django and Python that supports us
 
 ##### 3. File Upload (POST /upload/) [Ops User Only]
 
-   ` ` ` 
- 
+   
         URL:  http://127.0.0.1:8000/upload/ 
  
-   ` ` ` 
+
 
 ##### Headers:
 
  ` ` ` 
         Authorization: Token <your_token>
-  
  ` ` `  
 
 #### Value: Choose the file to upload.
 
 #####  4. List Files (GET /files/) [Client User Only]
 
-   ` ` ` 
+  
        URL: http://127.0.0.1:8000/files/ 
   
-   ` ` ` 
+
 
 #### Headers:
 
-` ` ` 
-    Authorization: Token <your_token>
-    
-` ` ` 
+     ` ` ` 
+         Authorization: Token <your_token>
+    ` ` ` 
+
 
 ##### 5. Download File (GET /files/<file_id>/download/) [Client User Only]
-     ` ` ` 
+  
            URL: http://127.0.0.1:8000/files/<file_id>/download/
-       
-    ` ` `
+
 
 #### Headers:
 
       ` ` `
              Authorization: Token <your_token>
-       
-     ` ` `
+      ` ` `
 
 ###  Project Structure
 
