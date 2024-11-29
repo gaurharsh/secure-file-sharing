@@ -48,6 +48,7 @@ A secure file-sharing application built using Django and Python that supports us
 #### Create a Superuser (Admin Account):
       ` ` `
         python manage.py createsuperuser
+        
       ` ` ` 
 
 ### Run the Development Server:
@@ -81,12 +82,14 @@ A secure file-sharing application built using Django and Python that supports us
   "username": "testuser",
   "password": "password123"
    }
+   
 ` ` ` 
 
 ##### 2. User Login (POST /login/)
  ` ` ` 
    URL:  http://127.0.0.1:8000/login/
-  ` ` `
+   
+ ` ` `
 
 
 ##### Payload Example (JSON):
@@ -104,46 +107,56 @@ A secure file-sharing application built using Django and Python that supports us
   "token": "your_generated_token"
  }
 
-` ` ` 
+ ` ` ` 
 
 ## 3. File Upload (POST /upload/) [Ops User Only]
 
-` ` ` 
- URL:` ` `  http://127.0.0.1:8000/upload/ ` ` `
-` ` 
+ ` ` ` 
+ 
+ URL:  http://127.0.0.1:8000/upload/ 
+ 
+ ` ` ` 
 
 ##### Headers:
 
 ` ` ` 
   Authorization: Token <your_token>
+  
 ` ` ` 
 
 ##### Payload (form-data):
 
-Key: ` ` ` file ` ` ` 
+Key: ` ` `  file   ` ` ` 
 
 #### Value: Choose the file to upload.
 
 ## 4. List Files (GET /files/) [Client User Only]
-
-URL: ` ` `  http://127.0.0.1:8000/files/ ` ` ` 
+  ` ` ` 
+  
+  URL: http://127.0.0.1:8000/files/ 
+  
+  ` ` ` 
 
 #### Headers:
 
 ` ` ` 
    Authorization: Token <your_token>
+   
 ` ` ` 
 
 ## 5. Download File (GET /files/<file_id>/download/) [Client User Only]
 ` ` ` 
+
 URL: http://127.0.0.1:8000/files/<file_id>/download/
 
-```
+` ` `
 
 #### Headers:
 
-` ` ` 
+` ` `
+
   Authorization: Token <your_token>
+
 
 ` ` `
 
@@ -165,6 +178,7 @@ URL: http://127.0.0.1:8000/files/<file_id>/download/
 │
 #### ├── manage.py                # Django management script
 #### └── requirements.txt         # Python dependencies
+
 
 
 
