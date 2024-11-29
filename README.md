@@ -153,16 +153,16 @@ A secure file-sharing application built using Django and Python that supports us
 secure-file-sharing/
 │
 ├── files/                   # Django app for handling file upload/download
-│   ├── migrations/          # Database migrations
-│   ├── models.py            # Database models
-│   ├── views.py             # API views
-│   ├── urls.py              # App-specific URL configurations
-│   └── ...
+│      ├── migrations/          # Database migrations
+│      ├── models.py            # Database models
+│      ├── views.py             # API views
+│      ├── urls.py              # App-specific URL configurations
+│
 │
 ├── secure_file_sharing/     # Main project folder
-│   ├── settings.py          # Project settings
-│   ├── urls.py              # Project URL configurations
-│   └── ...
+│     ├── settings.py          # Project settings
+│     ├── urls.py              # Project URL configurations
+│      └── ...
 │
 ├── manage.py                # Django management script
 └── requirements.txt         # Python dependencies
