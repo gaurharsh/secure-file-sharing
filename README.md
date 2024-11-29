@@ -150,27 +150,22 @@ A secure file-sharing application built using Django and Python that supports us
       ` ` `
 
 ###  Project Structure
-
-  secure-file-sharing/<br>
+secure-file-sharing/
 │
-
-├── files/  Django app for handling file upload/download
-│   ├── migrations/ <br>         # Database migrations
-│   ├── models.py <br>           # Database models
-│   ├── views.py <br>            # API views
-│   ├── urls.py  <br>            # App-specific URL configurations
+├── files/                   # Django app for handling file upload/download
+│   ├── migrations/          # Database migrations
+│   ├── models.py            # Database models
+│   ├── views.py             # API views
+│   ├── urls.py              # App-specific URL configurations
 │   └── ...
-├
-<br>
-── secure_file_sharing/     # Main project folder
+│
+├── secure_file_sharing/     # Main project folder
 │   ├── settings.py          # Project settings
 │   ├── urls.py              # Project URL configurations
 │   └── ...
 │
-<br>
 ├── manage.py                # Django management script
- └── requirements.txt        # Python dependencies
-
+└── requirements.txt         # Python dependencies
 
 
 
