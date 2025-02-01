@@ -1,5 +1,5 @@
 ## secure-file-sharing
-A secure file-sharing application built using Django and Python that supports user authentication, file uploads, and secure file downloads. The application implements token-based authentication for added security and provides the  distinct functionalities for different user roles (e.g., Ops users and Client users).
+A secure file-sharing application built using Django and Python that supports user authentication, file uploads, and secure file downloads. The application implements token-based authentication for added security and provides  distinct functionalities for the different user roles (e.g., Ops users and Client users).
 
 ## Features
 #### User Authentication: Signup, login, and token-based authentication using Django's built-in authentication system.
@@ -10,6 +10,7 @@ A secure file-sharing application built using Django and Python that supports us
 #### Token Authentication: Secure access to API endpoints using tokens.
 
 
+  
 ## Installation
 ###  Prerequisites
  Ensure you have the following installed:
